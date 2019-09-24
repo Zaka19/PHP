@@ -7,9 +7,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1><?php $Title ?></h1>
-    <p>Resize this responsive page to see the effect!</p>
+    <div class="jumbotron text-center bg-primary" style="margin-bottom:0">
+    <h1>BOOTSTRAP & PHP</h1>
+    <p><em>Formulari i mes coses...</em></p>
     </div>
 </body>
 </html>

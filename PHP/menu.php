@@ -33,7 +33,7 @@
 <a class="nav-link" href="Pagina2.php">Pagina 2</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#">Hola <?php echo $_SESSION['id']; ?>
+<a class="nav-link navbar-right" href="#">Hola <?php echo $_SESSION['id']; ?>
 </a>
 </li>
 </ul>
