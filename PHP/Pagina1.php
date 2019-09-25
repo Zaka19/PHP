@@ -3,27 +3,20 @@
 <?php require "menu.php" ?>
 <h1 style="text-align:center;margin: 30px;">Forms</h1>
 <div class="container">
-<form>
-  <div class="row">
-    <div class="col form-group">
-      <input type="text" class="form-control" placeholder="First name">
+  <form action="Pagina2.php" method="post">
+    <div class="form-group">
+      <label for="text">Name:</label>
+      <input type="text" class="form-control" id="n" placeholder="Enter Name" name="name">
     </div>
-    <div class="col form-group">
-      <input type="text" class="form-control" placeholder="Last name">
+    <div class="form-group">
+      <label for="text">First Name:</label>
+      <input type="text" class="form-control" id="fn" placeholder="Enter First Name" name="firstname">
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-4 form-group">
-      <input type="text" class="form-control" placeholder="City">
-    </div>            
-     <div class="col-sm-12 col-md-4 form-group">
-      <input type="text" class="form-control" placeholder="Zipcode">
-    </div>  
-    <div class="col-sm-12 col-md-4 form-group">
-      <input type="text" class="form-control" placeholder="Country">
+    <div class="form-group">
+      <label for="number">Code Client:</label>
+      <input type="number" class="form-control" id="cc" placeholder="Enter code" name="codeclient">
     </div>
-  </div>
-  <button type="submit" class="btn btn-info">Submit</button>
-</form>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>
 <?php include "footer.php" ?>

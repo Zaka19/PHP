@@ -1,24 +1,20 @@
-
 <?php 
     if(empty($_SESSION['id'])){
 
         if(empty(filter_input(INPUT_POST,"login")))
         {
-            $Nom = "Usuari no identificat";
-            $_SESSION['id'] = $Nom;
+            $_SESSION['id'] = "Usuari no identificat";
         }
 
         else
         {
-            $Nom = $_POST["login"];
-            $_SESSION['id'] = $Nom;
+            $_SESSION['id'] = $_POST["login"];
         }
 
     }
 ?>
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-<a class="navbar-brand" href="#">Menu</a>
+<a class="navbar-brand" href="login.php">Menu</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span>
 </button>
