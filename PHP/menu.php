@@ -1,21 +1,22 @@
-<html lang="en">
+
 <?php 
-    if(empty($_POST["login"])){
-        $Nom = "Usuari no identificat";
-        $_SESSION['id'] = $Nom;
-    }
-    else{
-        $Nom = $_POST["login"];
-        $_SESSION['id'] = $Nom;
+    if(empty($_SESSION['id'])){
+
+        if(empty(filter_input(INPUT_POST,"login")))
+        {
+            $Nom = "Usuari no identificat";
+            $_SESSION['id'] = $Nom;
+        }
+
+        else
+        {
+            $Nom = $_POST["login"];
+            $_SESSION['id'] = $Nom;
+        }
+
     }
 ?>
-<head>
-<title>Bootstrap 4 Website Example</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body>
+
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 <a class="navbar-brand" href="#">Menu</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -39,5 +40,3 @@
 </ul>
 </div>
 </nav>
-</body>
-</html>

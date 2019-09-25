@@ -1,13 +1,4 @@
-<?php session_start();?>
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <title>Login</title>
-</head>
-<body>
+<title>Login</title>
 <?php include "header.php" ?>
 <?php require "menu.php" ?>
 <main class="login-form" style="margin-top:120px;margin-bottom:120px;">
@@ -39,5 +30,3 @@
     </div>
 </main>
 <?php include "footer.php" ?>
-</body>
-</html>
