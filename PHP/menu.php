@@ -1,16 +1,18 @@
 <?php 
-    if(empty($_SESSION['id'])){
-
-        if(empty(filter_input(INPUT_POST,"login")))
-        {
-            $_SESSION['id'] = "Usuari no identificat";
-        }
-
-        else
-        {
-            $_SESSION['id'] = $_POST["login"];
-        }
-
+    if(empty($_SESSION['id']) && !empty(filter_input(INPUT_POST,"login"))){
+        $_SESSION['id'] = $_POST["login"];
+    }
+    elseif(!empty($_SESSION['id']) && !empty(filter_input(INPUT_POST,"login"))){
+        $_SESSION['id'] = $_POST["login"];
+        $_SESSION['name'] = "";
+        $_SESSION['fname'] = "";
+        $_SESSION['code'] = "";
+    }
+    elseif(!empty($_SESSION['id']) && empty(filter_input(INPUT_POST,"login"))){
+        $_SESSION['id'] = $_SESSION['id'];
+    }
+    elseif(empty($_SESSION['id']) && empty(filter_input(INPUT_POST,"login"))){
+        $_SESSION['id'] = "Usuari no identificat";
     }
 ?>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">

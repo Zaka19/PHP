@@ -1,6 +1,7 @@
 <title>Login</title>
 <?php include "header.php" ?>
 <?php require "menu.php" ?>
+<?php include "Cliente.php" ?>
 <h1 style="text-align:center;margin: 30px;">Login</h1>
 <main class="login-form" style="margin-top:120px;margin-bottom:120px;">
     <div class="cotainer">
@@ -13,7 +14,7 @@
                             <div class="form-group row">
                                 <label for="login" class="col-md-4 col-form-label text-md-right">Login Name</label>
                                 <div class="col-md-6">
-                                    <input type="text" id="login" class="form-control" name="login" required autofocus>
+                                    <input type="text" id="login" class="form-control" name="login" autofocus>
                                 </div>
                             </div>
 
