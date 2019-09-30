@@ -23,7 +23,7 @@
 <div class="collapse navbar-collapse" id="collapsibleNavbar">
 <ul class="navbar-nav">
 <li class="nav-item">
-<a class="nav-link" href="index1.php">Index </a>
+<a class="nav-link" href="index1.php">Index</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="Pagina1.php">Pagina 1</a>
