@@ -1,3 +1,4 @@
+
 <?php 
     if(empty($_SESSION['id']) && !empty(filter_input(INPUT_POST,"login"))){
         $_SESSION['id'] = $_POST["login"];

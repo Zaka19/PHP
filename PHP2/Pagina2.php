@@ -1,9 +1,7 @@
 <title>Info</title>
 <?php include "header.php" ?>
 <?php require "menu.php" ?>
-<?php include "Cliente.php" ?>
 <?php 
-    $Cliente = new Cliente();
 
     $Nom = " ";
     $FirstName = " ";
@@ -24,7 +22,8 @@
      if(!empty($Code)){
         $Cliente->setCode($Code);
         $_SESSION['code'] = $Code;
-     }
+    }
+
 ?>
 <div class="container">
     <div class="form-group" style="margin-top:20px;">
