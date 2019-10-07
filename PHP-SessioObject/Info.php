@@ -6,23 +6,31 @@
     $Name=filter_input(INPUT_POST,"name");
     $FirstName=filter_input(INPUT_POST,"firstname");
     $Code=filter_input(INPUT_POST,"codeclient");
-    $User = $_SESSION['user'];
 
-    if(!empty($Name)){
-        $User->setName($Name);
-    }
-    if(!empty($FirstName)){
-        $User->setFirstName($FirstName);
-    }
-    if(!empty($Code)){
-        $User->setCode($Code);
-    }
+    if(!empty($_SESSION['user'])){
+        $User = $_SESSION['user'];
 
-    $Name = $User->getName();
-    $FirstName= $User->getFirstName();
-    $Code= $User->getCode();
+        if(!empty($Name)){
+            $User->setName($Name);
+        }
+        if(!empty($FirstName)){
+            $User->setFirstName($FirstName);
+        }
+        if(!empty($Code)){
+            $User->setCode($Code);
+        }
 
-    $_SESSION['user'] = $User;
+        $Name = $User->getName();
+        $FirstName= $User->getFirstName();
+        $Code= $User->getCode();
+
+        $_SESSION['user'] = $User;
+    }
+else{
+    $Name = null;
+    $FirstName = null;
+    $Code = null;
+}
 ?>
 <div class="container">
     <div class="form-group" style="margin-top:20px;">

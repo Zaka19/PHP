@@ -11,16 +11,16 @@
         <h5 class="text-uppercase">Links</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="login.php" class="text-white">Login</a>
+            <a href="Login.php" class="text-white">Login</a>
           </li>
           <li>
-            <a href="index1.php" class="text-white">Index</a>
+            <a href="Index.php" class="text-white">Index</a>
           </li>
           <li>
-            <a href="Pagina1.php" class="text-white">Pagina 1</a>
+            <a href="Form.php" class="text-white">Pagina 1</a>
           </li>
           <li>
-            <a href="Pagina2.php" class="text-white">Pagina 2</a>
+            <a href="Info.php" class="text-white">Pagina 2</a>
           </li>
         </ul>
       </div>
